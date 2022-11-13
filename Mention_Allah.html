@@ -1,0 +1,105 @@
+
+                             <!--بسم الله الرحمن الرحيم-->
+
+<html>
+    <head>
+        <title>مسبحه الكترونيه</title>
+        <style>
+        
+            body{
+                
+                /* background:url(p4.png) no-repeat ; */    /*important*/
+                  
+                background-color:aqua;
+            }
+            
+            #div1{
+                
+               width:200px;
+               height:200px;
+               background-color:darkblue;
+               position:absolute;
+               top:200px;
+               left:600px;
+               border:2px solid white;
+               border-radius:25px;
+                
+            }
+            #in1{
+                
+                width:200px;
+                height:50px;
+                background-color:white;
+                border-radius:50px;
+                position:absolute;
+                top:0px;
+                text-align:center;
+                font-size:30px;
+            }
+            
+            #in2{
+                
+                position:absolute;
+                top:100px;
+                left:80px;
+                height:40px;
+                width:40px;
+                border-radius:20px;
+                background-color:white;
+                
+            }
+            #in3{
+                
+                position: absolute;
+                top:80px;
+                right:10px;
+                background-color: white;
+                height:20px;
+                width:20px;
+                border-radius:10px;
+            }
+            
+            #p1{
+                position:absolute;
+                top:60px;
+                left:60px;
+                color:white;
+            }
+            #p2{
+                position:absolute;
+                top:40px;
+                left:145px;
+                color:white;
+            }
+        </style>
+   </head>
+    
+   <boody>
+    
+       <div id="div1">
+        
+           <input type="number" id="in1" />
+           <input type="button" id="in2" onclick="counter(window.in1);"/>
+           <input type="button" id="in3" onclick="reset(window.in1);"/>
+           <p id="p1">Count</p>
+           <p id="p2">Reset</p>
+           
+       </div> 
+           <script>
+               var count=0;                 //declare and itilization  out the fun to increase  onmouseclick
+               function counter(input){
+               count++;
+               input.value=count;
+               
+               }
+               function reset(input){      //imp we can use the form direct with reset button
+                   
+                 input.value="0";
+                   
+                   
+               }
+          </script>
+        
+  </boody>
+
+</html>
